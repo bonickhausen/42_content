@@ -18,8 +18,14 @@ void ft_isdigit_test()
     printInt(ret);
 }
 
+void ft_isalnum_test()
+{
+    int ret = ft_isalnum(' ');
+    printInt(ret);
+}
+
 int main()
 {
-    ft_isdigit_test();
+    ft_isalnum_test();
     return 0;
 }
