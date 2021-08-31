@@ -54,8 +54,35 @@ void ft_memset_test()
     printString(frase);
 }
 
+void ft_bzero_test()
+{
+    char frase[] = "aeiouBLABLABLA";
+    ft_bzero(frase, 3);
+    printString(frase);
+}
+
+void ft_memcpy_test()
+{
+    char str1[] = "bolacha";
+    char str2[] = "FFF";
+    printString(str1);
+    printf("\n");
+    ft_memcpy(str1, str2, 10);
+    printString(str1);
+}
+
+void ft_memmove_test()
+{
+    char str1[] = "bolacha";
+    char str2[] = "FFF";
+    printString(str1);
+    printf("\n");
+    ft_memmove(str1, str2, 10);
+    printString(str1);
+}
+
 int main()
 {
-    ft_memset_test();
+    ft_memmove_test();
     return 0;
 }
