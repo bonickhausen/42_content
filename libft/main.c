@@ -81,8 +81,22 @@ void ft_memmove_test()
     printString(str1);
 }
 
+#include <string.h>
+void ft_strlcpy_test()
+{
+    char str1[] = "bolacha";
+    char str2[] = "FIGO RUIM";
+    printString(str1);
+    printf("\n");
+    int value = strlcpy(str1, str2, 2);
+    //ft_strlcpy(str1, str2, 10);
+    printString(str1);
+    printf("\n");
+    printInt(value);
+}
+
 int main()
 {
-    ft_memmove_test();
+    ft_strlcpy_test();
     return 0;
 }
